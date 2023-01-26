@@ -14,7 +14,6 @@ class FullScreenView extends StatelessWidget {
     void saveImage()async{
       if(await Permission.storage.request().isGranted){
         SaveImage.saveFile(link);
-        print("pressed");
         ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(
               behavior: SnackBarBehavior.floating,
