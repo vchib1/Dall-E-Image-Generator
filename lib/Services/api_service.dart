@@ -5,7 +5,7 @@ class ApiClass{
 
   static Future<String> apiCall(String prompt)async {
     String url = "https://api.openai.com/v1/images/generations";
-    String key = "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";
+    String key = "get your key from https://beta.openai.com/ and paste it here";
     var headers = {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer $key'
